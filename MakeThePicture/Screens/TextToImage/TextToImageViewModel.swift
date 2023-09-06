@@ -31,8 +31,8 @@ class TextToImageViewModel: TextToImageViewModelProtocol {
                 case .textChanged(let text):
                     self.state.update(\.propt, to: text)
                 case .mainButtonPressed:
-//                    self.requestTextToImage()
-                    self.uploadImage()
+                    self.requestTextToImage()
+//                    self.uploadImage()
                 }
             }
             .store(in: &cancellables)
